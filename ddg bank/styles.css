@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Gris clair pour tout le fond */
+    color: #333; /* Texte par défaut en gris foncé */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Vert pour le header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff; /* Logo en blanc */
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Liens en blanc */
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff5722; /* Orange au survol */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Remplir tout l'écran */
+    background: url('path-to-your-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Texte blanc */
+    padding: 0 20px;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+    color: darkolivegreen;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(91, 128, 114, 0.7); /* Ombre plus marquée pour que le texte ressorte mieux */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    text-shadow: 3px 3px 5px rgba(91, 128, 114, 0.7); /* Même ombre pour le texte */
+}
+
+.cta-button {
+    background-color: #ff5722; /* Orange */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Orange plus foncé au survol */
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff; /* Fond blanc */
+    color: #333; /* Texte foncé pour contraster avec le fond */
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #333; /* Couleur du titre */
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #009688; /* Couleur verte */
+    color: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Gris clair pour la section */
+    text-align: center;
+    color: #333; /* Texte foncé */
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 1.3em;
+    color: #666; /* Texte secondaire en gris clair */
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #4CAF50; /* Vert pour la section contact */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2em;
+}
+
+form button {
+    background-color: #ff5722; /* Orange */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e64a19; /* Orange foncé au survol */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

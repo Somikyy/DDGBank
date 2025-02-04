@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DDG Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/DDLogo.png" alt="DDG Bank Logo" class="logo-image">
+            DDG Bank
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Bienvenue chez DDG Bank</h1>
+            <p>La banque la plus fun et la plus fiable avec Donald comme président !</p>
+            <a href="#services" class="cta-button">Découvrir nos services</a>
+        </div>
+        <img src="img/DDbanque.png" alt="Image de banque" class="hero-image">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="img/DDcredit.png" alt="Crédit Canard" class="service-image">
+                <h3>Crédit Canard</h3>
+                <p>Un crédit facile et rapide, sans plumer votre porte-monnaie !</p>
+            </div>
+            <div class="card">
+                <img src="img/DDcomptefroussard.png" alt="Comptes Froussards" class="service-image">
+                <h3>Comptes Froussards</h3>
+                <p>Pour sécuriser vos économies avec un taux d'intérêt au top !</p>
+            </div>
+            <div class="card">
+                <img src="img/DDgoofy.png" alt="Épargne Goofy" class="service-image">
+                <h3>Épargne Goofy</h3>
+                <p>Faites grandir votre argent dans la joie et la bonne humeur !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>À propos de DDG Bank</h2>
+        <img src="img/DDpropos.png" alt="À propos de DDG Bank" class="about-image">
+        <p>DDG Bank est une institution bancaire différente, dirigée par Donald Duck lui-même, offrant une banque de proximité, rapide, efficace, et avec une dose de bonne humeur.</p>
+        <a href="#contact" class="cta-button">Nous contacter</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <img src="img/DDcontact.png" alt="Contactez-nous" class="contact-image">
+        <form id="contactForm">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
